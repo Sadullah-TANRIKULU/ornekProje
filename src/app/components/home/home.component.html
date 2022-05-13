@@ -1,0 +1,64 @@
+<p>home works!</p>
+<app-content-list></app-content-list>
+
+<!--html tag lerine angular class attribute leri eklemek-->
+
+<!-- <div [ngClass]="'class1 class2'">NgClass Example 1</div>     
+
+<div [ngClass]="['class1 class2']">NgClass Example 2</div>
+
+<div [ngClass]="{ 'class1' : true, 'class2' : 'asd' === 'asd', 'class3' : 3 < 5 }">NgClass Example 3</div>
+
+<div [ngClass]="{ 'class1 class2 class3' : 10 === 10 }">NgClass Example 4</div> -->
+
+<!--html tag lerine angular style attribute leri eklemek-->
+
+<!-- <div [ngStyle]="{ 'font-weight' : 800 }">NgStyle Example 1</div>
+
+<div [ngStyle]="{ 'height.%' : 100 }"></div>   // { 'height' : 100px } şeklinde de kullanılabilir--> 
+
+<!--html tag lerine angular structural direktif attribute leri eklemek-->
+
+<ul>
+    <li *ngFor="let user of users; let i = index">
+        {{i}}
+        <strong *ngIf="user.age === 27">{{user.name}}</strong> <!--böyle dersek yaşı 27 den küçük olanları yazdırmaz-->
+        <strong *ngIf="user.age < 27" appHighlight>{{user.name}}</strong> <!--bu appHighlight ı directives klasöründe tanımladık-->
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
