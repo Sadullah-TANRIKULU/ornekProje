@@ -1,1 +1,30 @@
 <p>contact works!</p>
+{{ username }}
+
+<ul>
+    <li *ngFor="let user of users">
+        {{ user.name | avatar }} <br>
+        {{ username }}
+
+    </li>
+</ul>
+
+
+<!-- {{ today | date: 'd/M/Y' }}  <br> | date pipe ı böyle uygulanır, çıktıyı daha anlaşılır bir hale getirir. -->
+
+<!-- {{ today | date: 'd MMMM Y' | uppercase }} <br> | date pipe ı böyle uygulanır, çıktıyı daha anlaşılır bir hale getirir. -->
+
+<!-- {{ 11300 | currency: 'EUR' }} <br> currency pipe default değer $ dır. -->
+
+<!-- {{ 11300 | currency }} <br> currency pipe default değer $ dır. -->
+
+<!-- {{ 11300 | currency: '₺' }}  currency pipe default değer $ dır. -->
+
+
+
+
+
+
+
+
+
